@@ -1,0 +1,239 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruz Deporte</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+    <div class="barrainit1">
+        <p class="p1init">BRUZ</p>
+        <p class="p2init">textil</p>
+        <div class="busqueda" id="busqueda">
+            <button class="busqueda-btn" id="busqueda-btn" aria-label="Abrir búsqueda" title="Buscar 🔍">🔍</button>
+            <input type="text" class="busqueda-input" id="busqueda-input" placeholder="Buscar...">
+        <div class="busqueda-message" id="busqueda-message"></div>
+    </div>
+    </div><br>
+
+    <header>
+        <div class="container">
+            <img src="BruzDeportelogo.jpg" alt="" class="logo">
+            <div class="user-actions">
+                <button class="btn btn-login">Iniciar Sesión</button>
+                <button class="btn btn-register">Registrarse</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-navigation">
+        <div class="container">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-layout">
+        <aside id="sidebar">
+            <div class="sidebar-section">
+                <h4>Categorías</h4>
+                <ul>
+                    <li><a href="#">Camisas</a></li>
+                    <li><a href="#">Pantalones</a></li>
+                    <li><a href="#">Zapatos</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Medias</a></li>
+                    <li><a href="#">Gorras</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h4>Filtros</h4>
+                <label for="rango-precio">Rango de Precio:</label>
+                <input type="range" id="rango-precio" name="rango-precio" min="0" max="200" value="50" style="width: 100%;">
+                <div class="rango-precio-display">
+                    <span>$0</span> - <span id="rango-precio-value">$50</span>
+                </div>
+                
+                <p class="filter-title">Color:</p>
+                <div class="filter-option">
+                    <input type="checkbox" id="color-red" name="color" value="red">
+                    <label for="color-red">Rojo</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="color-black" name="color" value="black">
+                    <label for="color-black">Negro</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" id="color-white" name="color" value="white">
+                    <label for="color-white">Blanco</label>
+                </div>
+                 <div class="filter-option">
+                    <input type="checkbox" id="color-blue" name="color" value="blue">
+                    <label for="color-blue">Azul</label>
+                </div>
+
+                <p class="filter-title">Marca:</p>
+                 <div class="filter-option">
+                    <input type="checkbox" id="brand-a" name="brand" value="a">
+                    <label for="brand-a">Marca A</label>
+                </div>
+                 <div class="filter-option">
+                    <input type="checkbox" id="brand-b" name="brand" value="b">
+                    <label for="brand-b">Marca B</label>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h4>Ordenar por</h4>
+                <select name="sort-by" id="sort-by" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+                    <option value="relevance">Aproximado</option>
+                    <option value="price-asc">Precio: Bajo a Alto</option>
+                    <option value="price-desc">Precio: Alto a Bajo</option>
+                    <option value="newest">Más Nuevos</option>
+                </select>
+            </div>
+            <button id="filter-button" style="margin-top: 20px; padding: 10px; width: 100%;">Aplicar Filtros</button>
+        </aside>
+
+        <main>
+            <section id="inicio" class="hero">
+                <div class="container">
+                    <h2>Bienvenido a Bruz Deporte</h2>
+                    <p>Tu destino para encontrar los mejores productos.</p>
+                    <a href="#catalogo" class="btn btn-primary">Ver Catálogo</a>
+                </div>
+            </section>
+
+            <section id="catalogo" class="product-grid">
+                <div class="container">
+                    <h2>Nuestro Catálogo</h2>
+                    <div class="products">
+                        <div class="product-item">
+                            <img src="img/Camisas/Camisa2.jpg" alt="Producto 1">
+                            <h3>Camisa</h3>
+                            <p class="price">$14</p>
+                            <button class="btn btn-add-cart">Añadir al Carrito</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/Pantalones/Pantalones2.jpg" alt="Producto 2">
+                            <h3>Pantalon</h3>
+                            <p class="price">$15</p>
+                            <button class="btn btn-add-cart">Añadir al Carrito</button>
+                        </div>
+                        <div class="product-item">
+                            <img src="img/Shorts/Shores2.jpg" alt="Producto 3">
+                            <h3>Shorts</h3>
+                            <p class="price">$8</p>
+                            <button class="btn btn-add-cart">Añadir al Carrito</button>
+                        </div>
+                         <div class="product-item">
+                            <img src="img/Accesorios/accesorio2.jpg" alt="Producto 4">
+                            <h3>Medias</h3>
+                            <p class="price">$3</p>
+                            <button class="btn btn-add-cart">Añadir al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ofertas" class="offers-section">
+                <div class="container">
+                    <h2>Ofertas Especiales</h2>
+                    <p>¡No te pierdas nuestros descuentos exclusivos!</p>
+                    </div>
+            </section>
+
+            <section id="contacto" class="contact-section">
+                <div class="container">
+                    <h2>Contáctanos</h2>
+                    <p>¿Tienes preguntas? Estamos aquí para ayudarte.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 BRUZ DEPORTE. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+    const searchBtn = document.getElementById('busqueda-btn');
+    const searchContainer = document.getElementById('busqueda');
+    const searchInput = document.getElementById('busqueda-input');
+    const searchMessage = document.getElementById('busqueda-message');
+    // Ejemplo: lista de términos a buscar
+    const searchItems = ['BRUZ', 'textil', 'ropa', 'moda', 'calzado'];
+    // Mostrar/ocultar input al hacer click en lupa
+    searchBtn.addEventListener('click', () => {
+        const isActive = searchContainer.classList.toggle('active');
+        if (isActive) {
+        searchInput.focus();
+        searchMessage.classList.remove('visible');
+        searchMessage.textContent = '';
+        } else {
+        searchInput.value = '';
+        searchMessage.classList.remove('visible');
+        searchMessage.textContent = '';
+        }
+    });
+
+        // Buscar al presionar Enter
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+        e.preventDefault();
+        const query = searchInput.value.trim().toLowerCase();
+        if (!query) {
+            searchMessage.textContent = 'Ingrese texto para buscar';
+            searchMessage.classList.add('visible');
+            return;
+        }
+        // Buscar coincidencia en searchItems
+        const found = searchItems.some(item => item.toLowerCase().includes(query));
+        if (found) {
+            searchMessage.textContent = `Resultado encontrado para "${searchInput.value}"`;
+        } else {
+            searchMessage.textContent = `No se encontró "${searchInput.value}"`;
+        }
+        searchMessage.classList.add('visible');
+        }
+    });
+
+    // Cerrar búsqueda si se hace click fuera
+    document.addEventListener('click', (e) => {
+        if (!searchContainer.contains(e.target) && searchContainer.classList.contains('active')) {
+        searchContainer.classList.remove('active');
+        searchInput.value = '';
+        searchMessage.classList.remove('visible');
+        searchMessage.textContent = '';
+        }
+    });
+
+    //rango de precio
+    const priceRangeInput = document.getElementById('rango-precio');
+    const priceRangeValueSpan = document.getElementById('rango-precio-value');
+
+    if (priceRangeInput && priceRangeValueSpan) {
+        // Set initial value
+        priceRangeValueSpan.textContent = `$${priceRangeInput.value}`;
+
+        // Update value on input change
+        priceRangeInput.addEventListener('input', (event) => {
+            priceRangeValueSpan.textContent = `$${event.target.value}`;
+        });
+    }
+
+</script>
+</body>
+</html>
